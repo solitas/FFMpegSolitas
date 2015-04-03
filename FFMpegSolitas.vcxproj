@@ -148,11 +148,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AudioContext.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SDLPlay.cpp" />
+    <ClCompile Include="VideoContext.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AudioContext.h" />
     <ClInclude Include="ConcurrentQueue.h" />
+    <ClInclude Include="SDLPlay.h" />
+    <ClInclude Include="SDLPlayError.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="VideoContext.h" />
   </ItemGroup>

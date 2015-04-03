@@ -1,18 +1,19 @@
 #pragma once
-#include "stdafx.h"
+
 
 class VideoContext
 {
 public:
+	VideoContext();
 	VideoContext(AVCodecContext* pCodecCtx);
 	~VideoContext();
 
 	AVCodecContext*	 pCodecCtx;
 	AVCodec*		 pCodec;
+	SwsContext*		 pToYUVConvertCtx;
+	int width;
+	int height;
 
+	int stream_index;
 };
 
-VideoContext::VideoContext(AVCodecContext* pCodecCtx)
-{
-	this->pCodecCtx = pCodecCtx;
-}
